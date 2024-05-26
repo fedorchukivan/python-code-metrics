@@ -1,0 +1,47 @@
+#Test for detecting single line comments.
+print("Hello, World!") #another comment
+print("Hello, # World!")
+
+#Test for detecting single line comments.
+print("Hello, World!") #another comment
+print("Hello, # World!")
+
+print("Hello, ''' World!")
+""" This is a comment
+# written in
+
+more than just one line """ 
+
+if b > a:
+    print("b is greater than a")
+
+try:
+    f = open("demofile.txt")
+try:
+    f.write("Lorum Ipsum")
+except:
+    print("Something went wrong when writing to the file")
+finally:
+    f.close()
+
+if x < count():
+    raise Exception("Sorry, no numbers below zero")
+
+for x in range(6):
+    print(x)
+
+def my_function(country = "Norway"):
+  print("I am from " + country)
+  return (country == "I am from ")
+
+'''
+smelly """
+'''
+
+x = 1
+y = 2.8
+z = 1j
+
+print(type(x))
+print(type(y))
+print(type(z))
